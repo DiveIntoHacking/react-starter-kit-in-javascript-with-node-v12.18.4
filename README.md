@@ -2,7 +2,7 @@
 
 ## Nodeのインストール方法
 
-本アプリケーションはNode v12.14.1を前提としています。macOSの場合だと以下の手順で導入できます。
+本アプリケーションはNode を前提としています。macOSの場合だと以下の手順で導入できます。Nodeのバージョンは`.node-version`を参照してください。
 
     $ wget -P /tmp https://nodejs.org/download/release/v12.14.1/node-v12.14.1.pkg
     $ sudo installer -pkg /tmp/node-v12.14.1.pkg -target /
