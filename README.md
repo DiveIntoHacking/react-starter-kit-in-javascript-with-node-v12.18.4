@@ -17,7 +17,8 @@
 本プロジェクトは、create-react-app により作成したアプリケーションから React の学習に必須の機能のみを厳選し、軽量化したものです。
 以下の手順でアプリケーションを起動できます。
 
-    $ git clone git@github.com:DiveIntoHacking/react-starter-kit-in-typescript.git
-    $ cd react-starter-kit-in-typescript
+    $ wget https://github.com/DiveIntoHacking/react-starter-kit-in-typescript/archive/v1.0.tar.gz
+    $ tar zxvf v1.0.tar.gz
+    $ cd react-starter-kit-in-typescript-1.0
     $ yarn install
     $ yarn start
