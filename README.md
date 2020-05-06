@@ -1,8 +1,8 @@
 # React Starter Kit in TypeScript
 
-## Nodeのインストール方法
+## Node のインストール方法
 
-本アプリケーションはNode を前提としています。macOSの場合だと以下の手順で導入できます。Nodeのバージョンは`.node-version`を参照してください。
+本アプリケーションは [Node.js](https://nodejs.org/) を前提としています。macOS の場合だと以下の手順で導入できます。Node のバージョンは`.node-version`を参照し、同じものを使用してください。
 
     $ wget -P /tmp https://nodejs.org/download/release/v12.14.1/node-v12.14.1.pkg
     $ sudo installer -pkg /tmp/node-v12.14.1.pkg -target /
@@ -14,7 +14,7 @@
 
 ## アプリケーションの起動方法
 
-本プロジェクトは、create-react-app により作成したアプリケーションから React の学習に必須の機能のみを厳選し、軽量化したものです。
+本プロジェクトは、[create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) により作成したアプリケーションから React の学習に最低限必要な機能のみを厳選し、軽量化したものです。
 以下の手順でアプリケーションを起動できます。
 
     $ wget https://github.com/DiveIntoHacking/react-starter-kit-in-typescript-with-node-v12.14.1/archive/v1.0.tar.gz
