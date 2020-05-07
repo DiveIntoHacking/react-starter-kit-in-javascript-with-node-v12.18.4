@@ -28,6 +28,7 @@
     $ wget https://github.com/DiveIntoHacking/react-starter-kit-in-typescript-with-node-v12.14.1/archive/v1.1.tar.gz
     $ tar zxvf v1.1.tar.gz
     $ cd react-starter-kit-in-typescript-with-node-v12.14.1-1.1
+    $ touch .bash_history
     $ docker-compose build
     $ docker-compose run --rm app yarn install
     $ docker-compose up
