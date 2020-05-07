@@ -2,6 +2,7 @@ version: "3"
 services:
   app:
     build: docker/app
+    tty: true
     volumes:
       - .:/app
       - .bash_history:/home/node/.bash_history
