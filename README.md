@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Starter Kit in TypeScript
 
-## Available Scripts
+## Node のインストール方法
 
-In the project directory, you can run:
+本アプリケーションは [Node.js](https://nodejs.org/) を前提としています。macOS の場合だと以下の手順で導入できます。Node のバージョンは`.node-version`を参照し、同じものを使用してください。
 
-### `yarn start`
+    $ wget -P /tmp https://nodejs.org/download/release/v12.14.1/node-v12.14.1.pkg
+    $ sudo installer -pkg /tmp/node-v12.14.1.pkg -target /
+    installer: Package name is Node.js
+    installer: Upgrading at base path /
+    installer: The upgrade was successful.
+    $ node -v
+    v12.14.1
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## アプリケーションの起動方法(Dockerを使用しない場合)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+本プロジェクトは、[create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) により作成したアプリケーションから React の学習に最低限必要な機能のみを厳選し、軽量化したものです。
+以下の手順でアプリケーションを起動できます。
 
-### `yarn test`
+    $ wget https://github.com/DiveIntoHacking/react-starter-kit-in-typescript-with-node-v12.14.1/archive/v1.5.tar.gz
+    $ tar zxvf v1.5.tar.gz
+    $ cd react-starter-kit-in-typescript-with-node-v12.14.1-1.2
+    $ yarn install
+    $ yarn start
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## アプリケーションの起動方法(Dockerを使用する場合)
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    $ wget https://github.com/DiveIntoHacking/react-starter-kit-in-typescript-with-node-v12.14.1/archive/v1.5.tar.gz
+    $ tar zxvf v1.5.tar.gz
+    $ cd react-starter-kit-in-typescript-with-node-v12.14.1-1.1
+    $ touch .bash_history
+    $ docker-compose build
+    $ docker-compose run --rm app yarn install
+    $ docker-compose up
